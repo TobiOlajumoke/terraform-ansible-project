@@ -101,18 +101,26 @@ add your variables, eg to where the red arrow points
 
 2. `cd terraform` into Terraform folder and run the following commands:
 
+
+- Initialize Terraform: Initialize Terraform in the project directory.
 ```
 terraform init
 ```
-
+- Review the Terraform Plan: Generate and review the execution plan to ensure it matches your expectations.
 ```
 terraform plan
 ```
+
+- Apply Terraform Changes: Apply the Terraform configuration to create the infrastructure.
 ```
 terraform apply
 ```
 
-once your instance is running connect via ssh with your local machine with the ip you specified above:
+Enter `yes` when prompted to confirm the changes.
+
+- Verify the Deployment: Once the Terraform execution completes, verify that the EC2 instance is successfully provisioned in the AWS Management Console.
+
+- once your instance is running connect via ssh with your local machine with the ip you specified above:
 
 
 ```
