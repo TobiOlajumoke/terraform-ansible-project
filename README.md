@@ -93,10 +93,8 @@ resource "aws_instance" "my_instance" {
 }
 ```
 add your variables, eg to where the red arrow points
-
-images/terrafrom_main.png
-images/terrafrom_main_contd.png
-
+![alt text](images/terrafrom_main.png)
+![alt text](images/terrafrom_main_contd.png)
 
 
 5. `cd terraform` into Terraform folder and run the following commands:
