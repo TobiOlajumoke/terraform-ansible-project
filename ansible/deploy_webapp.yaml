@@ -1,0 +1,27 @@
+---
+- hosts: all
+  remote_user: ec2-user
+  become: yes
+  tasks:
+    - name: Install Apache web server
+      yum:
+        name: httpd
+        state: present
+
+    - name: Start Apache service
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+
+    - name: Create web page showing local IP
+      template:
+        src: index.html.j2
+        dest: /var/www/html/index.html
+      notify: Restart Apache
+
+  handlers:
+    - name: Restart Apache
+      service:
+        name: httpd
+        state: restarted
