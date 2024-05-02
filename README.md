@@ -18,7 +18,7 @@ sudo apt install ansible
 or follow their thier offical [website](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#pipx-install)
 
 
-3. We wanna give terraform permission to write to this `/etc/ansible/hosts` file
+3. Let's give terraform permission to write to this `/etc/ansible/hosts` file
 if the file doesn't exit create one
 
     and run this commands:
